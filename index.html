@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quitanda</title>
-    <link rel="stylesheet" href="quitanda.css"> <!-- href faz a conexao e rel é o estilo-->
-    <script src="script.js"> </script>
+    <link rel="stylesheet" href="quitanda.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
     <div class="container">
         <h1>Quitanda</h1>
@@ -20,19 +18,14 @@
                     <option value="banana" data-preco="2.00">Banana - R$2,00</option>
                     <option value="maca" data-preco="3.00">Maçã - R$3,00</option>
                     <option value="laranja" data-preco="1.50">Laranja - R$1,50</option>
-                    <option value="uva" data-preco="1.50">Uva - R$5,00</option>
+                    <option value="uva" data-preco="5.00">Uva - R$5,00</option> 
                 </select>
                 
-                <label for="quantidade"> Quantidade</label>
+                <label for="qntd">Quantidade</label>
                 <input type="number" id="qntd" placeholder="Quantidade">
-
             </div>
-
-            <button type="button" onclick="calcularTotal()"> Adicionar ao Carrinho</button>
-
+            <button type="button" onclick="calcularTotal()">Adicionar ao Carrinho</button>
             <br><br>
-
-
         </form>
         <div id="carrinhoContainer">
             <h2>Carrinho</h2>
@@ -41,3 +34,4 @@
         </div>
     </div>
 </body>
+</html>
